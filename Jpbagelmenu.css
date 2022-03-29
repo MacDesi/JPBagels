@@ -1,0 +1,40 @@
+@font-face {
+    font-family:Lobster;
+    src: url(Lobster 1.4.otf);
+}
+
+div.navigationBar {
+    
+    font-family: Raspoutine Medium;
+    text-decoration: none;
+    margin-top: 5px;
+    padding: 40px;
+    padding-bottom: 0px;
+    display: block;
+    text-align: center;
+    overflow: hidden;
+    box-shadow:0 -2px 0 0 #2a3981 inset,
+    0 0px 0 0 #2a3981 inset; 
+    
+    
+
+}
+
+div.navigationBar a {
+    text-decoration: none;
+    color: #2a3981;
+    padding: 80px;
+    font-size: 18px;   
+}
+
+div.navigationBar a:hover {
+color: #ba9e7b;
+}
+
+#Logo {
+margin-top: -75px;
+margin-left: -900px;
+padding: 0px;
+cursor: pointer; cursor:hand;
+}
+
