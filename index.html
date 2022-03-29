@@ -1,0 +1,129 @@
+<!Doctype html>
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="main.css">
+    <link rel="icon" href="mstile-150x150.png" type="image/png">
+    <link rel="shortcut icon" href="mstile-150x150.png" type="image/png">
+    <link href="https://fonts.googleapis.com/css?family=Lato:700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet">
+
+    <title>
+    Jp's Bagel Place
+    </title>
+ 
+    </head>
+    
+    <body>
+    
+    <div class="navigationBar">
+    
+<a id="menuTab" href="Jpbagelmenu.html">Menu</a>
+<a id="locationTab" href="Jpbagellocation.html">Location</a>  
+<a id="contactTab" href="Jpbagelcontact.html">Contact Us</a>
+        
+        
+        <div class="LogoImage">
+        <a id="homeLink" href="index.html">
+        <img id="Logo" src="JpBagelLogo.png" alt="Logo" width="210" height="100">
+        </a>
+        </div>
+    </div>   
+    
+    
+    <div class="slideshow-container">
+
+<div class="mySlides fade">
+  <img src="JpBagelEST.jpg" style="width:100%">
+</div>
+
+<div class="mySlides fade">
+  <img src="alldaybreakfastimg.jpg" style="width:100%">
+</div>
+
+<div class="mySlides fade">
+  <img src="freshbagelsimg.jpg" style="width:100%"> 
+</div>
+      
+<div class="mySlides fade">
+  <img src="pickup-img.jpg" style="width:100%"> 
+</div>
+
+        
+<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+<a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span> 
+  <span class="dot" onclick="currentSlide(2)"></span> 
+  <span class="dot" onclick="currentSlide(3)"></span> 
+  <span class="dot" onclick="currentSlide(4)"></span> 
+</div>
+<div id="whiteDivider"></div>
+        
+<img id="Arrow"src="arrowicon.png">
+        
+
+    
+<div class="aboutSection"> 
+<div id="divider"></div>
+<div id="aboutTitle">About</div>
+<div id="aboutText">
+<img id="aboutImage" src="varietyimg.png" style="width:600px;height:328px;" align="right">
+  We're a local spot that serves<br> a variety of fresh home cooked<br> dishes which are both health conscious <br>and delicious. Including our hearty sandwiches and soups, and our freshly baked bagels.<!-- Our hearty sandwiches   <br>are made with only the choicest meats and vegetables. <br> All of our bagels and breads are freshly baked nightly. <br>We also create creates uniquely satisfying salads,<br> sandwiches and soups. -->
+        </div>
+             
+</div>  
+   
+    <div class="ambianceSection">
+         <div id="ambianceTitle">Ambiance</div>
+        <div id="ambianceText">
+        Enjoy a meal in our cozy space.
+        </div>
+        <div class="img">
+        <img id="ambianceImage" src="ambianceimages.png" style="width:880px;height:248px;" align="center">
+        </div>
+        </div>  
+    <div class="hoursSection">
+    <div id="finalDivider"></div>
+    <h2 id="hoursTitle">Hours:</h2>
+    <h3 id="hoursDescription1">Monday - Friday 7:00 Am - 2:00 Pm</h3>
+    <h3 id="hoursDescription2">Saturday And Sunday 7:00 Am - 1:00Pm </h3>
+        </div>
+
+      <script>
+      var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+}  
+         
+       </script>  
+        
+
+    
+    </body>
+</html>
